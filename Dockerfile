@@ -1,10 +1,9 @@
 FROM php:7.0.7-fpm-alpine
 
-MAINTAINER Ats Ymzk
+MAINTAINER Tetsuo Makino
 
 COPY ./etc/php/php.ini /usr/local/etc/php/
 COPY ./etc/php/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
-# RUN cat /usr/local/etc/php-fpm.conf
 
 # apk update
 RUN apk update && apk upgrade
